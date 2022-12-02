@@ -1,0 +1,63 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{enumitem} % Format list spacing 
+
+\begin{document}
+\subsection{Implementations}
+The following is an incomplete list of implementations of Root.
+
+\subsubsection{0x77700005BEA4DE0A78b956517f099260C2CA9a26}
+The Root contract address is 0x77700005BEA4DE0A78b956517f099260C2CA9a26 \newline(\term{i.e.}, \Root\ = 0x77700005BEA4DE0A78b956517f099260C2CA9a26).
+
+\paragraph{Current Parameters}
+The following are the current parameters of 0x77700005BEA4DE0A78b956517f099260C2CA9a26:
+\begin{itemize}[itemsep=3pt,leftmargin=16pt]
+    \item The owner of 0x77700005BEA4DE0A78b956517f099260C2CA9a26 is \newline0xb7774ec5031e1d903152E96BbC1601e5D0D83Ca2 (\term{i.e.}, the \term{Root DAO Multisig});
+    \item The address of Beanstalk is 0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5; and
+    \item $\Root^{\text{min}}$ = 0.1\%.
+\end{itemize}
+
+\paragraph{Minting Whitelist}
+The following ERC-20 Standard tokens are on the Beanstalk \term{Deposit} \term{Whitelist} and \term{Whitelisted} for \term{Minting} \Root:
+
+\begin{itemize}[itemsep=3pt,leftmargin=16pt]
+    \item 0xBEA0000029AD1c77D3d5D23Ba2D8893dB9d1Efab (\term{i.e.}, \Bean).
+\end{itemize}
+
+\paragraph{Governance}
+A robust decentralized governance mechanism must balance the principles of decentralization with resistance to attempted protocol changes, both malicious and ignorant, and the ability to quickly adapt to changing information. 
+
+0x77700005BEA4DE0A78b956517f099260C2CA9a26 is governed by Root DAO. Root DAO governs upgrades to 0x77700005BEA4DE0A78b956517f099260C2CA9a26, the use of \term{Stalk} in Beanstalk governance and the treatment of non-Beanstalk-native yield earned by \newline0x77700005BEA4DE0A78b956517f099260C2CA9a26. Any account that owns \Root\ can participate in Root DAO governance.
+
+\subparagraph{RIPs}
+
+Any account that owns more than $\Root^{\text{RIP}}$, such that $\Root^{\text{RIP}} \in \{j \times 10^{-18} \mid j \in \mathbb{N},\ j \leq 10^{18} \}$, of total outstanding \Root\ can submit a \term{RIP} to the Root DAO Snapshot\fref{snapshot.org/\#/rootsmoney.eth} via the \term{Root DAO Multisig}.
+
+Root DAO only accepts votes in favor of \term{RIPs}. An account's vote for a given \term{RIP} is counted as the minimum of its \Root\ between the beginning and end of the \term{Voting Period}. 
+
+A \term{Voting Period} begins when a vote for a \term{RIP} can be submitted to Snapshot and ends at approximately the beginning of the 169th Beanstalk \term{Season} after it begins, or when the \term{RIP} is committed with a supermajority.
+
+If at the end of the \term{Voting Period}:
+\begin{itemize}[midsep]
+    \item Less than or equal to half of the total outstanding eligible \Root\ votes in favor of the \term{RIP}, it fails; and
+    \item More than half of the total outstanding eligible \Root\ votes in favor of the \term{RIP}, it passes.
+\end{itemize}
+
+If at any time before the end of the \term{Voting Period} more than two-thirds of the total outstanding eligible \Root\ votes in favor of the \term{RIP}, it passes and can be committed to the Ethereum blockchain.
+
+\subparagraph{Stalk Use}
+In its capacity as a \term{Stalkholder}, 0x77700005BEA4DE0A78b956517f099260C2CA9a26 is entitled to vote on (1) each \term{Beanstalk Improvement Proposal} (\term{BIP}) and (2) other, non-\term{BIP}, governance processes, and may be entitled to non-Beanstalk-native yields.
+
+Any \Root\ owner can submit a \term{Root Stalk Proposal} (\term{RSP}) to the \term{RSP} Snapshot\fref{snapshot.org/\#/rootstalkproposals.eth} to determine how Root should use its \term{Stalk} in each governance process, and distribute yields, if ever. \term{RSPs} follow the same structure as \term{RIPs}, except that the length of the \term{Voting Period} can be reasonably shortened to ensure the will of Root DAO can be reflected in the governance process.
+
+Any \term{Beanstalk Improvement Proposal} (\term{BIP}) will automatically qualify to be proposed to Root DAO as an \term{RSP}.
+
+The \term{Root DAO Multisig} will participate on each governance process as determined by the \term{RSP}.
+
+\subparagraph{Root DAO Multisig}
+The \term{Root DAO Multisig} is a 4-of-7 Safe\fref{app.safe.global/eth:0xb7774ec5031e1d903152E96BbC1601e5D0D83Ca2} multisig wallet with anonymous signers consisting of community members and contributors to Root and Beanstalk. The \term{Root DAO Multisig} will execute the will of Root DAO. The \term{Root DAO Multisig} will provide sufficient notice of the submission of a \term{RIP}, its contents and the beginning of its \term{Voting Period} before submitting a \term{RIP} to Snapshot, and will repost \term{BIPs} on the \term{RSP} Snapshot as soon as possible after they are posted to the Beanstalk DAO Snapshot.\fref{snapshot.org/\#/beanstalkdao.eth} In the future, we expect \term{RIPs} will implement permissionless governance and revoke these abilities from the \term{Root DAO Multisig}.
+
+Thus, Root creates a robust decentralized governance mechanism.
+\end{document}

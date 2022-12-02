@@ -1,0 +1,60 @@
+\documentclass[class=article, crop=false]{standalone}
+\usepackage[subpreambles=true]{standalone}
+\usepackage{import}
+\usepackage{enumitem} % Format list spacing 
+
+\begin{document}
+
+\subsection{Glossary}
+The following conventions are adopted from the Beanstalk Whitepaper and used throughout this Whitepaper:
+\begin{itemize}
+    \item Lower case Latin letters are unique values;
+    \item Upper case Latin letters are totals or rates; and
+    \item Superscripts are modifiers.
+\end{itemize}
+
+The following variables and terms are used throughout this paper:
+\begin{itemize}[topsep=0pt, itemsep=3pt,leftmargin=16pt]
+    \item[] \Bean\ - Bean;
+    \item[] BDV - Bean-denominated-value;
+    \item[] Beanstalk - The issuer of \Bean\ and \term{Silo} \term{Deposits}; 
+    \item[] \term{Beanstalk Improvement Proposal} - A Beanstalk governance proposal;
+    \item[] \term{BIP} - A \term{Beanstalk Improvement Proposal};
+    \item[] $\Sigma c$ - The cumulative \term{Seeds} for a given list of \term{Silo} \term{Deposits};
+    \item[] $C$ - Root's total \term{Seeds};
+    \item[] \term{Convert} - Turn one or more \term{Silo} \term{Deposits} into another, within the \term{Silo};
+    \item[] DAO - Decentralized autonomous organization;
+    \item[] DeFi - Decentralized finance;
+    \item[] \term{Deposit} - An asset in the \term{Silo};
+    \item[] \term{Deposit} \term{Whitelist} - The Beanstalk whitelist that permissions which tokens can be \term{Deposited} into the \term{Silo};
+    \item[] \term{Depositors} - An account that has \term{Deposited} assets into the \term{Silo};
+    \item[] \term{Earned} \Bean\ - Beans paid to a \term{Stalkholder} after the last \term{Season} the \term{Stalkholder} called the \code{plant()} function;
+    \item[] \term{Grown} \term{Stalk} - \term{Stalk} that has \term{Grown} from \term{Seeds} but not yet \term{Mown};
+    \item[] $\Sigma k$ - The cumulative \term{Stalk} for a given list of \term{Silo} \term{Deposits};
+    \item[] $K$ - Root's total \term{Stalk};
+    \item[] $\Sigma l$ - The cumulative BDV for a given list of \term{Silo} \term{Deposits};
+    \item[] $L$ - Root's total BDV;
+    \item[] LP - Liquidity pool;
+    \item[] \term{Mint} - Turn one or more Beanstalk \term{Silo} \term{Deposits} into \Root;
+    \item[] \term{Minting} \term{Whitelist} - The Root whitelist that permissions using Beanstalk \term{Silo} \term{Deposits} to \term{Mint} \Root;
+    \item[] \term{Mow} - Turn \term{Grown} \term{Stalk} into \term{Stalk};
+    \item[] \term{Plant} - Turn \term{Plantable} \term{Seeds} associated with \term{Earned} \Bean\ into \term{Seeds} by \term{Depositing} the \term{Earned} \Bean\ in the current \term{Season};
+    \item[] \term{Redeem} - Turn \Root\ into one or more Beanstalk \term{Silo} \term{Deposits};
+    \item[] \term{RIP} - A \term{Root Improvement Proposal};
+    \item[] \term{Root Improvement Proposal} - A Root governance proposal;
+    \item[] \term{Root Stalk Proposal} - A Root governance proposal to determine how Root should use its \term{Stalk} in a given instance unrelated to \term{RIPs};
+    \item[] \term{RSP} - A \term{Root Stalk Proposal};
+    \item[] \term{Root DAO Multisig} - The owner of the Root contract;
+    \item[] \term{$\rho$} - The total \Root\ supply;
+    \item[] \Root\ - Roots; Root's ERC 20 Standard token;
+    \item[] $\Root^{\text{max}}$ - The maximum \Root\ to \term{Redeem};
+    \item[] $\Root^{\text{min}}$ - The minimum \Root\ to \term{Mint};
+    \item[] $\Root^{\text{RIP}}$ - The percentage of \Root\ ownership necessary to submit a \term{RIP};
+    \item[] \term{Season} - Beanstalk-native discrete time;
+    \item[] \term{Seed} - A Beanstalk-native asset that \term{Grows} $1 \times 10^{-4}$ \term{Stalk} each \term{Season};
+    \item[] \term{Silo} - The Beanstalk DAO;
+    \item[] \term{Stalk} - The Beanstalk-native governance asset;
+    \item[] \term{Stalkholder} - An owner of \term{Stalk}; a Beanstalk DAO member; and
+    \item[] \term{Voting Period} - The period of time \Root\ owners can vote on a \term{RIP} or \term{RSP}.
+\end{itemize}
+\end{document}
