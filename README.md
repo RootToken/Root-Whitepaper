@@ -1,3 +1,5 @@
+<img src="https://github.com/RootToken/Root-Brand-Assets/blob/main/ROOT/root.svg" alt="Root logo" align="right" width="120" />
+
 # Root Whitepaper
 
 LaTeX for the Root Whitepaper.
